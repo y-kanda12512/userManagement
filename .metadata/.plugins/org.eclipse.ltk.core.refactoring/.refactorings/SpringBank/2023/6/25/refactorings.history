@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;SpringBank/src/main/resources/i18n/ValidationMessages&apos; を &apos;ValidationMessages.properties&apos; に変更します" description="リソース &apos;ValidationMessages&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/i18n/ValidationMessages" name="ValidationMessages.properties" stamp="1687601803545" updateReferences="true"/>
+</session>

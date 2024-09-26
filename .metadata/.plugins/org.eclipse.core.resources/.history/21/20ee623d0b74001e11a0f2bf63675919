@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ユーザー登録</title>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<main id="wrapper">
+			<h1 class="transaction-title">ユーザー情報登録画面</h1>
+			<p>ユーザー情報を入力して下さい</p>
+			<div class="signupForm">
+				<!--ユーザーIDはプログラム上で採番する-->
+				<form method="post" th:action="@{/signup}" th:object="${user}">
+					<div class="form-group">
+						<label th:text="#{userName}"></label>
+						<input class="form-control" type="text" th:field="*{userName}" th:errorclass="is-invalid"
+							placeholder="山田 太郎" />
+						<div class="invalid-feedback" th:errors="*{userName}"></div>
+					</div>
+					
+					<div class="form-group">
+						<label th:text="#{password}"></label>
+						<input class="form-control" type="text" th:field="*{password}" th:errorclass="is-invalid"
+							placeholder="なるべく頑丈にしたほうがいいです" />
+						<div class="invalid-feedback" th:errors="*{password}"></div>
+					</div>
+					
+					<div class="form-group">
+						<label th:text="#{birthday}"></label>
+						<input class="form-control" type="text" th:field="*{birthday}" th:errorclass="is-invalid" />
+						<div class="invalid-feedback" th:errors="*{birthday}"></div>
+					</div>
+					
+					<div class="form-group">
+						<label th:text="#{age}"></label>
+						<input class="form-control" type="text" th:field="*{age}" th:errorclass="is-invalid"/>
+						<div class="invalid-feedback" th:errors="*{age}"></div>
+					</div>
+					
+					<div class="form-group">
+						<label th:text="#{gender}"></label>
+						<div class="gender-btn">
+							<input  type="radio" th:field="*{gender}" name="gender" value="1" th:errorclass="is-invalid"/><label>男</label>
+							<input  type="radio" th:field="*{gender}" name="gender" value="2" th:errorclass="is-invalid"/><label>女</label>
+						</div>
+						
+						<div class="invalid-feedback" th:errors="*{gender}"></div>
+					</div>
+					
+					<input type="submit" value="登録" />
+				</form>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

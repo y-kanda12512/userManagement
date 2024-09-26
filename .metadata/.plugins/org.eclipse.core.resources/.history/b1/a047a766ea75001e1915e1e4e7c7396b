@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.detailHeading{
+	padding: 10px;
+	border-bottom: 10px;
+	color: red;
+	font-size: 20px;
+}
+table{
+	border: 1px ;
+}
+
+.wrapper {
+	margin: 0 auto;
+	text-align: center;
+	width: 1000px;
+	padding: 20px;
+}
+.signupForm  {
+	text-align: center;
+	margin: 0 auto;
+}

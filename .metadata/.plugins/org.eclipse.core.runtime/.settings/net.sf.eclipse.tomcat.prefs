@@ -1,0 +1,5 @@
+contextsDir=/Users/yuto/Desktop/Eclipse_2022-12.app/Contents/tomcat/9/conf/Catalina/localhost
+eclipse.preferences.version=1
+tomcatConfigFile=/Users/yuto/Desktop/Eclipse_2022-12.app/Contents/tomcat/9/conf/server.xml
+tomcatDir=/Users/yuto/Desktop/Eclipse_2022-12.app/Contents/tomcat/9
+tomcatVersion=tomcatV9
